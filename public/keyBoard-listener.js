@@ -12,6 +12,10 @@ export default function createKeyBoardListener() {
         state.observers.push(observerFuction)
     }
 
+    function unsubscribeAll(observerFunction) {
+        state.observers = []
+    }
+
     function notifyAll(command) {
 
         for (const observerFuction of state.observers) {

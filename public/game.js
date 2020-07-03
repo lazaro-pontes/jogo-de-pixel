@@ -34,17 +34,22 @@ export default function createGame() {
         const playerId = command.playerId
         const playerX = 'playerX' in command ? command.playerX : Math.floor(Math.random() * state.screen.width)
         const playerY = 'playerY' in command ? command.playerY : Math.floor(Math.random() * state.screen.height)
+        const name = ''
+        const score = 0
 
         state.players[playerId] = {
             x: playerX,
-            y: playerY
+            y: playerY,
+            name,
+            score
         }
 
         notifyAll({
             type: 'add-player',
             playerId,
             playerX,
-            playerY
+            playerY,
+            score
         })
     }
 
@@ -138,6 +143,7 @@ export default function createGame() {
                 removeFruit({
                     fruitId
                 })
+                player.score += 1
             }
         }
 

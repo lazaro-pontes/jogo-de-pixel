@@ -22,7 +22,7 @@ sockets.on('connection', (socket) => {
     console.log(`> player conectado no servidor com ID: ${playerId}`)
 
     game.addPlayer({playerId})
-    
+    console.log(game.state)
     socket.emit('setup', game.state)
 
     socket.on('disconnect', () => {
