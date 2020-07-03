@@ -11,7 +11,7 @@ export default function renderScreen(screen, scoreTable, game, requestAnimationF
 
     for (const fruitId in game.state.fruits) {
         const fruit = game.state.fruits[fruitId]
-        context.fillStyle = 'red'
+        context.fillStyle = '#64dd17'
         context.fillRect(fruit.x, fruit.y, 1, 1)
     }
 
@@ -72,9 +72,9 @@ function updateScoreTable(scoreTable, game, currentPlayerId){
     scoreTableInnerHTML = topScorePlayers.reduce((stringFormed, player) => {
         return stringFormed + `
             <tr ${player.playerId === currentPlayerId ? 'class="current-player"' : ''}>
-                <td>${player.playerId}</td>
+                <td class="indigo-text text-darken-4">${player.playerId}</td>
                 <td>${player.name}</td>
-                <td>${player.score}</td>
+                <td class="red-text text-accent-4">${player.score}</td>
             </tr>
         `
     }, scoreTableInnerHTML)
