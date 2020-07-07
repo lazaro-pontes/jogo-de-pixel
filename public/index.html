@@ -10,13 +10,43 @@
             image-rendering: pixelated;
             image-rendering: crisp-edges;
             image-rendering: -moz-crisp-edges;
-            width: 350px;
-            height: 350px;
+            width: 330px;
+            height: 330px;
             padding: 0%;
         }
 
         #score-table {
             margin: 2%;
+        }
+        @media (min-width: 592px) and (max-width: 684px) { 
+            #screen {
+            width: 520px;
+            height: 520px;
+            padding: 0%;
+            }
+            #score-table {
+            margin: 0%;
+            }
+        }
+        @media (min-width: 685px) and (max-width: 843px) { 
+            #screen {
+            width: 620px;
+            height: 620px;
+            padding: 0%;
+            }
+            #score-table {
+            margin: 0%;
+            }
+        }
+        @media (min-width: 844px) and (max-width: 1200px) { 
+            #screen {
+            width: 720px;
+            height: 720px;
+            padding: 0%;
+            }
+            #score-table {
+            margin: 0%;
+            }
         }
     </style>
 
@@ -31,10 +61,10 @@
             id="screen" 
             width="10" 
             height="10" 
-            class="grey lighten-1 col xl3 offset-xl3 z-depth-3">
+            class="grey lighten-1 col s12 m10 l10 xl5 offset-xl2 z-depth-3">
         </canvas>
 
-        <table id="score-table" class="col xl3 s5 striped centered"></table>
+        <table id="score-table" class="col s12 m12 l12 xl2 striped centered"></table>
     </div>
 </body>
 <!-- Compiled and minified JavaScript -->
