@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Meu Primeiro Jogo</title>
     <style>
         #screen {
@@ -9,10 +10,11 @@
             image-rendering: pixelated;
             image-rendering: crisp-edges;
             image-rendering: -moz-crisp-edges;
-            width: 400px;
-            height: 400px;
+            width: 300px;
+            height: 300px;
             padding: 0%;
         }
+
         #score-table {
             margin: 2%;
         }
@@ -23,11 +25,16 @@
 </head>
 
 <body>
-    <div class="row">
-        <table id="score-table" class="col xl3 push-xl2 striped centered"></table>
-
-        <canvas id="screen" width="10" height="10" class="grey lighten-1 col xl3 offset-xl2 z-depth-3">
+    <div class="row container">
+        <div class="row"></div>
+        <canvas 
+            id="screen" 
+            width="10" 
+            height="10" 
+            class="grey lighten-1 col xl3 offset-xl3 z-depth-3">
         </canvas>
+
+        <table id="score-table" class="col xl3 s5 striped centered"></table>
     </div>
 </body>
 <!-- Compiled and minified JavaScript -->

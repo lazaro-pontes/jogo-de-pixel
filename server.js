@@ -8,7 +8,7 @@ const app = express()
 const server = http.createServer(app)
 const sockets = io(server)
 const game = createGame()
-game.start()
+//game.start()
 
 game.subscribe((command) => {
     console.log(`> emitindo ${command.type}`)
