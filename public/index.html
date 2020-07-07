@@ -10,42 +10,61 @@
             image-rendering: pixelated;
             image-rendering: crisp-edges;
             image-rendering: -moz-crisp-edges;
-            width: 330px;
-            height: 330px;
+            width: 100%;
+            height: calc(width);
             padding: 0%;
         }
 
         #score-table {
             margin: 2%;
         }
-        @media (min-width: 592px) and (max-width: 684px) { 
+
+        @media (min-width: 592px) and (max-width: 684px) {
             #screen {
-            width: 520px;
-            height: 520px;
-            padding: 0%;
+                width: 100%;
+                height: calc(width);
+                padding: 0%;
             }
+
             #score-table {
-            margin: 0%;
+                margin: 0%;
             }
         }
-        @media (min-width: 685px) and (max-width: 843px) { 
+
+        @media (min-width: 685px) and (max-width: 843px) {
             #screen {
-            width: 620px;
-            height: 620px;
-            padding: 0%;
+                width: 100%;
+                height: calc(width);
+                padding: 0%;
             }
+
             #score-table {
-            margin: 0%;
+                margin: 0%;
             }
         }
-        @media (min-width: 844px) and (max-width: 1200px) { 
+
+        @media (min-width: 844px) and (max-width: 1199px) {
             #screen {
-            width: 720px;
-            height: 720px;
-            padding: 0%;
+                width: 100%;
+                height: calc(width);
+                padding: 0%;
             }
+
             #score-table {
-            margin: 0%;
+                margin: 0%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            #screen {
+                width: 50%;
+                height: calc(width);
+                margin-left: 10%;
+                padding: 0%;
+            }
+
+            #score-table {
+                margin: 2%;
             }
         }
     </style>
@@ -57,14 +76,10 @@
 <body>
     <div class="row container">
         <div class="row"></div>
-        <canvas 
-            id="screen" 
-            width="10" 
-            height="10" 
-            class="grey lighten-1 col s12 m10 l10 xl5 offset-xl2 z-depth-3">
+        <canvas id="screen" width="10" height="10" class="grey lighten-1 col s12 m10 l10 xl5 offset-xl2 z-depth-3">
         </canvas>
 
-        <table id="score-table" class="col s12 m12 l12 xl2 striped centered"></table>
+        <table id="score-table" class="col s12 m12 l12 xl1 striped centered"></table>
     </div>
 </body>
 <!-- Compiled and minified JavaScript -->
