@@ -5,4 +5,4 @@
 Veja [ Releases ] (https://github.com/lazaro-pontes/jogo-de-pixel/releases) para o changelog detalhado.
 
 ##  Licença
-[ Licença MIT ] (https://github.com/lazaro-pontes/jogo-de-pixel/blob/master/LICENSE.md) © [ Afonso Pacifer ] (http://afonsopacifer.com/)
+[ Licença MIT ] (https://github.com/lazaro-pontes/jogo-de-pixel/blob/master/LICENSE.md) © [ João Lázaro ]
